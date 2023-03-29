@@ -10,16 +10,17 @@
   # if it is snowy, print "coat"
   # if it is icy, print "yak traks"
 
-weather = "sunny"
+puts "What is the weather today? sunny, rainy, snowy, or icy?"
+  weather = gets.chomp
 
 if weather == "sunny"
-  p "sunscreen"
+  p "Don't forget sunscreen!"
 elsif weather == "rainy"
-  p "umbrella"
+  p "Take an umbrella!"
 elsif weather == "snowy"
-  p "coat"
+  p "Bundle up, coat and gloves!"
 elsif weather == "icy"
-  p "yak traks"
+  p "yak traks! yak traks! yak traks!"
 else
   p "good to go!"
 end
@@ -41,11 +42,19 @@ end
 # Experiment with manipulating the value held within num_quarters
 # to make sure both conditions can be achieved.
 
-num_quarters = 0
+num_quarters = 3
+if num_quarters >= 2
+  puts "I have enough money for a gumball"
+  else
+    puts "I don't have enough money for a gumball"
+end
 
-puts "I have enough money for a gumball"
-puts "I don't have enough money for a gumball"
-
+num_quarters = 1
+if num_quarters >= 2
+  puts "I have enough money for a gumball"
+  else
+    puts "I don't have enough money for a gumball"
+end
 
 #####################
 # Using the variables defined below, write code that will tell you
@@ -63,3 +72,16 @@ puts "I don't have enough money for a gumball"
 
 cups_of_flour = 1
 has_sauce = true
+if cups_of_flour >= 2 && (has_sauce == true)
+  puts "I can make a pizza!"
+  else
+    puts "I cannot make a pizza *sad*"
+end
+
+cups_of_flour = 3
+has_sauce = true
+if cups_of_flour >= 2 && (has_sauce == true)
+  puts "I can make a pizza!"
+  else
+    puts "I cannot make a pizza *sad*"
+end
